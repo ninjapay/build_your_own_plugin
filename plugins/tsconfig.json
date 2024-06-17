@@ -1,0 +1,35 @@
+{
+  "compilerOptions": {
+    "target": "esnext",  
+   // "strict": true,
+    "strictNullChecks": false,                 
+    "module": "CommonJS", 
+    "sourceMap": true,                     
+    "lib": ["es6"],                             
+    "allowJs": true,                       
+    "outDir": "./dist",                        
+    "rootDir": "./src",                       
+    "removeComments": true, 
+    "types": ["node"],               
+    "typeRoots": [
+      "./node_modules/@types",
+      "./typings"
+    ],                          
+    "esModuleInterop": true,                  
+    "resolveJsonModule": true,
+    "experimentalDecorators": true,        
+    "emitDecoratorMetadata": true,         
+    "skipLibCheck": true,                     
+    "forceConsistentCasingInFileNames": true,
+    "baseUrl": ".",
+    "paths": {
+      "@controllers/*": ["./src/controllers/*"],
+      "@models/*": ["./src/models/*"],
+      "@views/*": ["./src/views/*"],
+      "@config/*": ["./src/config/*"]
+    }
+  },
+  "include": [
+    "src/**/*"
+  ]
+}
